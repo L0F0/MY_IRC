@@ -19,9 +19,9 @@ int	find_space(char *str)
 	return (-1);
 }
 
-void	word_after_space(char *str)
+char	*word_after_space(char *str)
 {
-	char*tmp;
+	char	*tmp;
 	int index1 = 0;
 	int index2 = 0;
 
@@ -34,6 +34,6 @@ void	word_after_space(char *str)
 
 	}
 	tmp[index1] = '\0';
-	printf("tmp -> %s\n", tmp);
+	return (tmp);
 }
 

@@ -16,7 +16,7 @@ int	check_select(char *str, t_client *client)
 	for (int i = 0; str[i]; i++) {
 		if (str[i] == ':') {
 			client->addr = strndup(str, i);
-			c = i;
+		c = i;
 			while  (str[c]) { 
 				c++;
 			}

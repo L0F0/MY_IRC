@@ -12,15 +12,15 @@ void	parse_arg(char *str, int cs1, t_server *server)
 	if(strncmp(str, "/server", 7) == 0)
 		printf("server\n");
 	else if(strncmp(str, "/nick", 5) == 0)
-		getnickname(str);
+		getnickname(str, server, cs1);
 	else if(strncmp(str, "/list", 5) == 0)
 		printf("list\n");
 	else if(strncmp(str, "/join", 5) == 0)
 		join_chanel(str, cs1, server);
 	else if(strncmp(str, "/part", 5) == 0)
 		printf("part\n");
-	else if(strncmp(str, "/userS", 6) == 0)
-		printf("users\n");
+	else if(strncmp(str, "/users", 6) == 0)
+		user_function(str, cs1, server);
 	else if(strncmp(str, "/names", 6) == 0)
 		printf("names\n");
 	else if(strncmp(str, "$message", 8) == 0)
