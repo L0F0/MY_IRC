@@ -196,6 +196,7 @@ int	initTheServerNext(t_server *server)
 	}
 	server->tv.tv_sec = 1;
 	server->tv.tv_usec = 1000;
+	server->chanel = NULL;
 	return (0);
 }
 

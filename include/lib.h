@@ -47,6 +47,7 @@ struct s_chanel
 {
 	char	*name;
 	int	id;
+	t_chanel	*next;
 };
 
 struct s_clientOnServer
