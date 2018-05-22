@@ -77,7 +77,7 @@ struct s_server
  ****************************/
 
 void		Usage();
-void		parse_arg(char *str);
+void		parse_arg(char *str, int cs1, t_server *server);
 void		Usage_client();
 int		check_argv_for_client(char **av);
 int		check_argv_for_server(char **av);
@@ -98,6 +98,8 @@ int		handle_client(t_server *server);
 void		printAllClient(t_server *server);
 int		initTheServer(t_server *server, char **av);
 int		initTheServerNext(t_server *server);
+void		join_chanel(char *str, int cs1, t_server *server);
+int		find_space(char *str);
 
 /*************************
           MACROS

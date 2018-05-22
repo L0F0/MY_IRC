@@ -7,7 +7,7 @@
 
 #include "lib.h"
 
-void	parse_arg(char *str)
+void	parse_arg(char *str, int cs1, t_server *server)
 {
 	if(strncmp(str, "/server", 7) == 0)
 		printf("server\n");
@@ -16,7 +16,7 @@ void	parse_arg(char *str)
 	else if(strncmp(str, "/list", 5) == 0)
 		printf("list\n");
 	else if(strncmp(str, "/join", 5) == 0)
-		printf("join\n");
+		join_chanel(str, cs1, server);
 	else if(strncmp(str, "/part", 5) == 0)
 		printf("part\n");
 	else if(strncmp(str, "/userS", 6) == 0)

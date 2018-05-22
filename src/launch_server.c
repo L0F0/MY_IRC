@@ -74,7 +74,7 @@ int     handle_client2(int cs1, t_server *server)
 		delete_client(cs1, &server->allClient);
 	}
 	write(0, buff, len);
-	parse_arg(buff);
+	parse_arg(buff, cs1, server);
 	write(0, "\n", 1);
 	return (0);
 }

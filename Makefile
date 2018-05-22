@@ -23,7 +23,8 @@ SRCS	=	$(DIR)/main.c		\
                 $(DIR)/launch_client.c	\
 		$(DIR)/epur_str.c	\
 		$(DIR)/parse.c		\
-		$(DIR)/command.c
+		$(DIR)/command.c	\
+		$(DIR)/command2.c
 
 
 OBJS	=	$(SRCS:.c=.o)
